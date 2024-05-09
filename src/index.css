@@ -1,0 +1,397 @@
+*{
+  padding: 0;
+  margin: 0;
+  
+}
+body{
+  background-color: #FFDC9F ;
+  
+}
+
+.pr{
+  position: relative;
+}
+.pab{
+  position: absolute;
+}
+.hidden{
+  display: none;
+}
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(27, 25, 25, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.top{
+  justify-content: center;
+  align-items: center;
+}
+
+.top_name {
+  font-family: 'Pacifico', cursive; 
+  font-size: 48px;
+  color: #ff9a03;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(45deg, #ffee54, #f39c12);
+  background-clip: text;
+  transition: all 0.4s ease;
+}
+
+.top_name:hover {
+  transform: scale(1.1); /* 호버 시 확대 */
+  color: #e74c3c; /* 호버 시 색상 변경 */
+}
+.logo_img{
+  width: 75px;
+  height: 75px;
+  animation: spin 0.7s infinite linear; 
+  transition: all 0.5s; 
+}
+
+
+@keyframes spin {
+0% {
+  transform: rotate(0deg);
+}
+100% {
+  transform: rotate(360deg);
+}
+}
+
+.top_name{
+  padding: 50px;
+  display: inline-block;
+}
+
+
+.list_name{
+  background-color: #f7a842;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.list_name:hover{
+  background-color: #e0993d;
+}
+.list_name:active{
+  background-color: #d89032;
+}
+.write_name{
+  background-color: #f7a842;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.write_name:hover{
+  background-color: #e0993d;
+}
+.write_name:active{
+  background-color: #d89032;
+}
+.flex{
+  display: flex;
+}
+.icon_react{
+  width: 25px;
+  height: 25px;
+}
+.icon_javascript{
+  width: 25px;
+  height: 25px;
+}
+
+
+.icon_node{
+  width: 25px;
+  height: 25px;
+}
+.icon_html{
+  width: 25px;
+  height: 25px;
+}
+.icon_css{
+  width: 25px;
+  height: 25px;
+}
+.search_wrap{
+  gap: 10px;
+}
+.search_wrap{
+  justify-content: center;
+  align-items: center;
+}
+.search_input{
+  padding: 12px;
+  width: 500px;
+  border-radius: 10px;
+}
+.search_btn {
+  padding: 10px 15px;
+  background-color: #f7a842; 
+  color: white; 
+  border: none; 
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search_btn:hover {
+  background-color: #e0993d;
+}
+
+.search_btn:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(175, 116, 76, 0.5);
+}
+
+.search_btn:active {
+  background-color: #d89032;
+  transform: translateY(-2px);
+}
+
+.save_btn {
+  padding: 10px 15px;
+  background-color: #f7a842; 
+  color: white; 
+  border: none; 
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.save_btn:hover {
+  background-color: #e0993d;
+}
+
+.save_btn:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(175, 116, 76, 0.5);
+}
+
+.save_btn:active {
+  background-color: #d89032;
+  transform: translateY(-2px);
+}
+
+
+dt{
+  font-size: 34px;
+  font-weight: bold;
+  color: #b92d2d ;
+}
+dd{
+  color : #463d33;
+  font-size: 18px;
+  font-weight: 600;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.custom_btn{
+    overflow: visible;
+    white-space: normal;
+    text-overflow: clip;
+}
+
+.type_font{
+  font-size : 26px;
+  color: #312f2c ;
+}
+
+.custom_btn{
+  margin: 0 20px;
+}
+
+.custom_btn>button {
+  padding: 10px 15px;
+  margin: 0 5px;
+  background-color: #f7a842; 
+  color: white; 
+  border: none; 
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.custom_btn>button:hover {
+  background-color: #e0993d;
+}
+
+.custom_btn>button:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(175, 116, 76, 0.5);
+}
+
+.custom_btn>button:active {
+  background-color: #d89032;
+  transform: translateY(-2px);
+}
+
+
+.edit_box{
+  width: 500px;
+  height: 100px;
+}
+
+.nav_wrap{
+  gap: 10px;
+  padding: 69px 0;
+  justify-content: center;
+}
+
+
+.select_btn{
+  padding: 20px 0;
+  color: #494343;
+  font-size: 38px;
+}
+
+dl{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 15px 0;
+  padding: 10px;
+  border: solid 1px rgba(255, 132, 50, 0.5);
+  border-radius: 10px;
+}
+dt{
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+
+span{
+  height: 10px;
+  line-height: 0px
+}
+
+/* write css */
+
+.write_box{
+  margin: 20px 0;
+}
+.item_box{
+  margin: 20px 0;
+}
+.write_top{
+  margin: 20px 0;
+}
+.write_font{
+  font-size: 18px
+}
+.write_item {
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  background-color: #f9f9f9; 
+  font-size: 14px; 
+  transition: all 0.3s ease; 
+}
+
+.write_item:focus {
+  border-color: #ffbb45;
+  outline: none; 
+  box-shadow: 0 0 10px rgba(175, 116, 76, 0.5); 
+}
+
+.mean_textbox {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  font-size: 14px;
+  resize: vertical;
+}
+
+.mean_textbox:focus {
+  border-color: #ffbb45;
+  outline: none;
+  box-shadow: 0 0 10px rgba(175, 116, 76, 0.5);
+}
+.types {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.types:focus {
+  border-color: #ffbb45;
+  outline: none;
+  box-shadow: 0 0 10px rgba(175, 116, 76, 0.5);
+}
+
+.types option {
+  padding: 10px; 
+}
+
+.mean_textbox{
+  width: 280px;
+  padding: 10px;
+}
+.mean_box{
+  margin-bottom: 20px;
+}
+
+.sort_box {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.sort_box:focus {
+  border-color: #ffbb45;
+  outline: none;
+  box-shadow: 0 0 10px rgba(175, 116, 76, 0.5);
+}
